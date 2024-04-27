@@ -133,7 +133,7 @@ export default function Example() {
             <div className="fixed inset-0 bg-black bg-opacity-25" />
           </Transition.Child>
 
-          <div className="fixed inset-0 z-60 flex">
+          <div className="fixed inset-0 z-40 flex">
             <Transition.Child
               as={Fragment}
               enter="transition ease-in-out duration-300 transform"
@@ -154,6 +154,67 @@ export default function Example() {
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
                 </div>
+
+                {/* Links */}
+                {/* <Tab.Group as="div" className="mt-2">
+                  <div className="border-b border-gray-200">
+                    <Tab.List className="-mb-px flex space-x-8 px-4">
+                      {navigation.categories.map((category) => (
+                        <Tab
+                          key={category.name}
+                          className={({ selected }) =>
+                            classNames(
+                              selected
+                                ? "border-indigo-600 text-indigo-600"
+                                : "border-transparent text-gray-900",
+                              "flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium"
+                            )
+                          }
+                        >
+                          {category.name}
+                        </Tab>
+                      ))}
+                    </Tab.List>
+                  </div>
+                  <Tab.Panels as={Fragment}>
+                    {navigation.categories.map((category) => (
+                      <Tab.Panel
+                        key={category.name}
+                        className="space-y-12 px-4 py-6"
+                      >
+                        <div className="grid grid-cols-2 gap-x-4 gap-y-10">
+                          {category.featured.map((item) => (
+                            <div key={item.name} className="group relative">
+                              <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
+                                <img
+                                  src={item.imageSrc}
+                                  alt={item.imageAlt}
+                                  className="object-cover object-center"
+                                />
+                              </div>
+                              <a
+                                href={item.href}
+                                className="mt-6 block text-sm font-medium text-gray-900"
+                              >
+                                <span
+                                  className="absolute inset-0 z-10"
+                                  aria-hidden="true"
+                                />
+                                {item.name}
+                              </a>
+                              <p
+                                aria-hidden="true"
+                                className="mt-1 text-sm text-gray-500"
+                              >
+                                Shop now
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      </Tab.Panel>
+                    ))}
+                  </Tab.Panels>
+                </Tab.Group> */}
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6 flex flex-col items-center">
                   {navigation.pages.map((page) => (
@@ -247,7 +308,7 @@ export default function Example() {
                       <div className="ml-4 flow-root lg:ml-8">
                         <button
                           type="button"
-                          className="rounded-full bg-indigo-600 px-2.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                          className="rounded-full bg-indigo-600 px-2.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 hidden lg:block"
                         >
                           Buy and Sell
                         </button>
