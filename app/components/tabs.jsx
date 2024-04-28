@@ -9,7 +9,6 @@ const TabsComponent = ({ tabs }) => {
     { name: "Partner 1", category: "All" },
     { name: "Partner 2", category: "Tissage et bonneterie" },
     { name: "Partner 3", category: "Finissage" },
-    { name: "Partner8", category: "Finissage" },
     { name: "Partner 4", category: "Filature" },
   ];
 
@@ -17,13 +16,15 @@ const TabsComponent = ({ tabs }) => {
     selectedTab === 0
       ? partenaires
       : partenaires.filter(
-          (partner) => partner.category === tabs[selectedTab].title
+          (partner) =>
+            partner.category.toLowerCase().replace(/\s/g, "") ===
+            tabs[selectedTab].title.toLowerCase().replace(/\s/g, "")
         );
 
   return (
     <div className="bg-white flex justify-center items-center py-[80px]">
-      <div className="max-w-[400px] flex flex-col gap-y-2 w-full lg:max-w-[900px]">
-        <div className="bg-blue-900 p-1 text-sm rounded-full flex justify-between items-center gap-x-2 font-bold text-white">
+      <div className="max-w-[900px] flex flex-col gap-y-2 w-full">
+        <div className="bg-blue-900 p-1 text-sm rounded-full flex justify-between items-center gap-x-2 font-bold text-white shadow-lg">
           {tabs.map((item, index) => (
             <button
               key={index}
