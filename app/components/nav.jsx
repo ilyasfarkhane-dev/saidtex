@@ -75,7 +75,7 @@ export default function Example() {
                         smooth={true}
                         offset={50}
                         duration={500}
-                        className="-m-2 block p-2 font-medium text-gray-900"
+                        className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer"
                       >
                         {page.name}
                       </Link>
