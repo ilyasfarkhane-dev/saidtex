@@ -24,7 +24,7 @@ const TabsComponent = ({ tabs }) => {
   return (
     <div className="bg-white flex justify-center items-center py-[80px]">
       <div className="max-w-[900px] flex flex-col gap-y-2 w-full">
-        <div className="bg-white p-1 text-sm rounded-full flex justify-between items-center gap-x-2 font-bold text-blue-900 shadow-lg">
+        <div className="bg-blue-100 p-1 text-sm rounded-full flex justify-between items-center gap-x-2 font-bold text-blue-900 shadow-lg">
           {tabs.map((item, index) => (
             <button
               key={index}
