@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 const Hero1 = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -43,7 +44,11 @@ const Hero1 = () => {
   ];
 
   return (
-    <section className="works section-padding" data-scroll-index="2">
+    <section
+      className="works section-padding"
+      data-scroll-index="2"
+      id="partenaires"
+    >
       <div className="">
         <div className="row">
           <div className="section-head offset-md-2 col-md-8 offset-lg-3 col-lg-6">
@@ -95,13 +100,24 @@ const Hero1 = () => {
                   activeFilter === "All" || item.category === activeFilter
               )
               .map(({ id }) => (
-                <div key={id} className="item-img">
-                  <img
-                    src={`/images/portfolio/${id}.png`}
-                    alt="image"
-                    className="img-fluid"
-                  />
-                  {/* Add overlay and other elements */}
+                <div class="item-img">
+                  <img src={`/images/portfolio/${id}.png`} alt="image" />
+                  <div class="item-img-overlay">
+                    <div class="item-img-overlay">
+                      <div class="overlay-info full-width">
+                        <img
+                          src={`/images/portfolio/machines/${id}.jpg`}
+                          alt="image"
+                        />
+                        <p></p>
+                        <a href="https://www.temco.de/" class="popimg">
+                          <span class="icon">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               ))}
           </div>

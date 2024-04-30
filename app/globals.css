@@ -4,13 +4,6 @@
 
 /*-----------------------------------------------------------------------------------
 
- Theme Name: Coco
- Theme URI: http://
- Description: The Multi-Purpose Onepage Template
- Author: ui-themez
- Author URI: http://themeforest.net/user/ui-themez
- Version: 1.0
-
  Main Color   : #1A237E , #2576FD
  main Font    : Rubik
 
@@ -43,6 +36,8 @@
 /* ----------------------------------------------------------------
      [ 01 Start Basics ]
 -----------------------------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 * {
   margin: 0;
@@ -1885,7 +1880,7 @@ a:hover {
 
 footer {
   padding: 80px 0;
-  background-color: #111;
+  background-color: #f3f3f3;
 }
 
 footer .social a {
@@ -1996,6 +1991,9 @@ footer p {
 @media screen and (max-width: 767px) {
   .mb-sm50 {
     margin-bottom: 50px;
+  }
+  .hid {
+    display: none;
   }
   .mb-sm30 {
     margin-bottom: 30px;

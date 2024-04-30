@@ -5,6 +5,7 @@ const Hero1 = () => {
     <>
       <header
         className="header relative bg-img"
+        id="home"
         style={{ backgroundImage: "url('/images/slide.gif')" }}
         data-scroll-index="0"
         data-stellar-background-ratio="0.5"
@@ -12,7 +13,7 @@ const Hero1 = () => {
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="relative z-10 items-center">
           <div className="py-20">
-            <div className="text-center caption mt-[100px]">
+            <div className="text-center caption mt-[150px]">
               <h1 className="text-white text-2xl font-bold mb-5">SAIDTEX</h1>
               <h3 className="text-white font-bold text-xl mb-5">
                 VOTRE PARTENAIRE POUR LES MACHINES TEXTILES AVEC UN ACCENT FORT

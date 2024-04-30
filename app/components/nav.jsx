@@ -81,11 +81,8 @@ export default function Example() {
                       </Link>
                     </div>
                   ))}
-                  <button
-                    type="button"
-                    className="rounded-full bg-indigo-600 px-2.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  >
-                    Buy and Sell
+                  <button type="button" className="butn butn-bg">
+                    <span> Buy and Sell </span>
                   </button>
                 </div>
               </Dialog.Panel>
@@ -163,11 +160,8 @@ export default function Example() {
 
                       {/* Cart */}
                       <div className="ml-4 flow-root lg:ml-8">
-                        <button
-                          type="button"
-                          className="rounded-full bg-indigo-600 px-2.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 hidden lg:block"
-                        >
-                          Buy and Sell
+                        <button type="button" className="butn butn-bg hid">
+                          <span> Buy and Sell </span>
                         </button>
                       </div>
                     </div>
