@@ -10,8 +10,8 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import { Link } from "react-scroll";
-
+import { Link as ScrollLink } from "react-scroll";
+import Link from "next/link";
 const navigation = {
   pages: [
     { name: "Home", href: "home" },
@@ -70,20 +70,22 @@ export default function Example() {
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6 flex flex-col items-center">
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
-                      <Link
-                        to={page.href}
+                      <ScrollLink
+                        to={page.href} // Use the href as the target ID
                         smooth={true}
-                        offset={50}
+                        offset={-50} // Adjust the offset if needed
                         duration={500}
                         className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer"
                       >
                         {page.name}
-                      </Link>
+                      </ScrollLink>
                     </div>
                   ))}
-                  <button type="button" className="butn butn-bg">
-                    <span> Buy and Sell </span>
-                  </button>
+                  <Link href="/buyandsell">
+                    <button type="button" className="butn butn-bg">
+                      <span> Buy and Sell </span>
+                    </button>
+                  </Link>
                 </div>
               </Dialog.Panel>
             </Transition.Child>
@@ -117,7 +119,7 @@ export default function Example() {
                     <Popover.Group className="inset-x-0 bottom-0 px-4">
                       <div className="flex h-full justify-center space-x-8">
                         {navigation.pages.map((page) => (
-                          <Link
+                          <ScrollLink
                             key={page.name}
                             to={page.href}
                             smooth={true}
@@ -126,7 +128,7 @@ export default function Example() {
                             className="cursor-pointer flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                           >
                             {page.name}
-                          </Link>
+                          </ScrollLink>
                         ))}
                       </div>
                     </Popover.Group>
@@ -160,9 +162,11 @@ export default function Example() {
 
                       {/* Cart */}
                       <div className="ml-4 flow-root lg:ml-8">
-                        <button type="button" className="butn butn-bg hid">
-                          <span> Buy and Sell </span>
-                        </button>
+                        <Link href="/buyandsell">
+                          <button type="button" className="butn butn-bg">
+                            <span> Buy and Sell </span>
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
