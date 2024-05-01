@@ -31,7 +31,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="container mx-auto py-5">
+    <div className="container mx-auto px-4 py-5">
       <SellNav />
       <h1 className="text-[30px] font-bold mt-[100px] mb-[50px]  text-center">
         Buy And Sell
