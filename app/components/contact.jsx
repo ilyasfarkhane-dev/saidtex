@@ -122,26 +122,27 @@ const Contact = () => {
 
                 <div className="controls">
                   <div className="row">
-                    <div className="md:w-1/2">
-                      <div className="mb-8">
+                    <div className="flex flex-wrap -mx-4">
+                      <div className="w-full md:w-1/2 px-4 mb-8">
                         <input
                           type="text"
                           name="name"
                           placeholder="Name"
                           required="required"
+                          className="w-full p-2 border border-gray-300 rounded-md"
                         />
                       </div>
-                    </div>
-                    <div className="md:w-1/2">
-                      <div className="mb-8">
+                      <div className="w-full md:w-1/2 px-4 mb-8">
                         <input
                           type="email"
                           name="email"
                           placeholder="Email"
                           required="required"
+                          className="w-full p-2 border border-gray-300 rounded-md"
                         />
                       </div>
                     </div>
+
                     <div className="md:w-full">
                       <div className="mb-8">
                         <input

@@ -33,7 +33,7 @@ const ContactPage = () => {
   return (
     <div className="container mx-auto py-5">
       <SellNav />
-      <h1 className="text-[30px] font-bold mt-[100px] mb-[50px] font-mono text-center">
+      <h1 className="text-[30px] font-bold mt-[100px] mb-[50px]  text-center">
         Buy And Sell
       </h1>
       <form action="#" method="POST" className="mx-auto max-w-xl">

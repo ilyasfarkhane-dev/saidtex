@@ -163,7 +163,7 @@ export default function Example() {
                       {/* Cart */}
                       <div className="ml-4 flow-root lg:ml-8">
                         <Link href="/buyandsell">
-                          <button type="button" className="butn butn-bg">
+                          <button type="button" className="butn butn-bg hid">
                             <span> Buy and Sell </span>
                           </button>
                         </Link>
