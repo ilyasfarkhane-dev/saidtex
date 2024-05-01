@@ -4,6 +4,7 @@
 // contact.js
 
 import React, { useState } from "react";
+import SellNav from "../components/sellNav";
 import { PhotoIcon, UserCircleIcon } from "@heroicons/react/24/solid";
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -30,7 +31,8 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto py-5">
+      <SellNav />
       <h1 className="text-[30px] font-bold mt-[100px] mb-[50px] font-mono text-center">
         Buy And Sell
       </h1>
