@@ -18,12 +18,12 @@ const Navbar = () => {
       {/* Bottom Navbar Content */}
       <div className="flex justify-center pt-[80px]">
         <Link
-          className="flex items-center text-gray-800 dark:text-white"
+          className="flex items-center rounded-md bg-[#1a237e] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
           href="/"
         >
           <span className="mr-2">Retour au site</span>
           <svg
-            className="w-6 h-6 text-gray-800 dark:text-white"
+            className="w-6 h-6 text-white dark:text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
