@@ -16,7 +16,7 @@ const Navbar = () => {
       </div>
 
       {/* Bottom Navbar Content */}
-      <div className="flex justify-center">
+      <div className="flex justify-center pt-[80px]">
         <Link
           className="flex items-center text-gray-800 dark:text-white"
           href="/"
