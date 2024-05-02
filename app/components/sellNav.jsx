@@ -16,7 +16,7 @@ const Navbar = () => {
       </div>
 
       {/* Bottom Navbar Content */}
-      <div className="flex justify-center pt-[80px]">
+      <div className="flex justify-center ">
         <Link
           className="flex items-center rounded-md bg-[#1a237e] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
           href="/"
