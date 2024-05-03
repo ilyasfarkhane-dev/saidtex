@@ -389,9 +389,9 @@ a:hover {
   color: #fff;
 }
 
-/* .butn-bg:hover span {
+.butn-bg:hover span {
   color: #1a237e;
-} */
+}
 
 .butn-light,
 .butn-bord {

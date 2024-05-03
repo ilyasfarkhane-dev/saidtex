@@ -13,6 +13,10 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    // Add custom utilities
+    textShadow: {
+      DEFAULT: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+    },
   },
   plugins: [
     require("@tailwindcss/forms"),
